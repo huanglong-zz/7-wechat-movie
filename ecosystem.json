@@ -1,0 +1,31 @@
+{
+  /**
+   * This is a sample configuration file for PM2
+   */
+
+  /**
+   * Here we declare the apps that must be managed by PM2
+   * All options are listed here:
+   * https://github.com/Unitech/PM2/blob/master/ADVANCED_README.md#json-app-declaration
+   *
+   */
+  // pm2 deploy ecosystem.json production
+  "apps" : [
+
+    // First application
+    {
+      "name"      : "Wechat",
+      "script"    : "app.js",
+      "merge_logs"      : true,
+      "log_date_format" : "YYYY-MM-DD HH:mm Z",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "instances": 0,
+      "exec_mode": "cluster_mode",
+      "env_production" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "port": 3000,
+  "appID": "wx84cf38141b01aea1",
+  "appSecret": "5e7edc318456407d476234af5bd26f9b",
+  "baseUrl": "http://wechat.t.imooc.io/nodeport",
+  "token": "imoocisareallyamzingplacetolearn"
+}
